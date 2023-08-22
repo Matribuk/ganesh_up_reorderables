@@ -931,11 +931,9 @@ class _ReorderableFlexContentState extends State<_ReorderableFlexContent>
       transform: Matrix4.rotationZ(0),
       alignment: FractionalOffset.topLeft,
       child: Material(
-        child:
-            Card(child: ConstrainedBox(constraints: constraints, child: child)),
-        elevation: 6.0,
+        child: child,
+        elevation: 0.0,
         color: Colors.transparent,
-        borderRadius: BorderRadius.zero,
       ),
     );
   }
